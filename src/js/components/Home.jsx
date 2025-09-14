@@ -14,22 +14,33 @@ const Home = () => {
 							placeholder="What do you need to do?"
 							value={inputValue}
 							onKeyUp={(e) => {
-								console.log("key was pressed", e.key);
+								console.log(e.key);
 								if (e.key === "Enter") {
 									console.log("enter was pressed");
 									setTodos(todos.concat(inputValue));
-									//:	null
+									setInputValue("");
 								}
 							}}
 						></input>
 					</li>
-					<li>Make the bed</li>
-					<li>Walk the dog</li>
-					<li>Pay taxes</li>
-					<li>Go on vacation</li>
+					{todos.map((item, index) => (
+						<li>
+							{item} {""}
+							onClick={() =>
+								setTodos(
+									todos.filter(
+										(t, currentIndex) =>
+											index != currentIndex
+									)
+								)
+							}
+						</li>
+					))}
+
 				</ul>
+
+				<div>{todos.length} tasks</div>
 			</div>
-			<div>23 tasks</div>
 		</>
 
 	);
