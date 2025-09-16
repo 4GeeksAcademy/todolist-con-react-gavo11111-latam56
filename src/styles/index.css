@@ -11,17 +11,39 @@
 */
 body{
     margin-top: 100px;
+    background-color: lightyellow;
 }
 ul{
 padding: 0;
 margin-bottom: 0 ;
 }
 ul li{
-border: 1px solid gray;
+border:  1px solid gray;
 list-style: none;
 padding: 5px;
 }
-h1{ text-align: center; }
-input{border: 0;
- width: 100px;}
+h1{ text-align: center; 
+font-size: 90px;
+color: pink;
+font-weight: 205;}
+
+input {
+border: 1px gray;
+ width: 100%;
+font-size: 25px;
+font-style: italic;
+font-weight: 105;
+background-color: lightyellow;
+}
+input:focus {
+    outline: none;
+background-color: white;}
+.xdelay{
+  display: none;
+}
+
+ 
+.tarea:hover .xdelay{ 
+display:inline;
+}
 
