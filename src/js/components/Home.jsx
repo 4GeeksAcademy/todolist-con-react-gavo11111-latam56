@@ -17,6 +17,7 @@ const Home = () => {
 							console.log(e.key);
 							if (e.key === "Enter") {
 								console.log("enter was pressed");
+								if (inputValue.trim() === "") return;
 								setTodos(todos.concat(inputValue));
 								setInputValue("");
 							}

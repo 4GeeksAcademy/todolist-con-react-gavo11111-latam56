@@ -11,7 +11,7 @@
 */
 body{
     margin-top: 100px;
-    background-color: lightyellow;
+    background-color: white;
 }
 ul{
 padding: 0;
@@ -33,7 +33,7 @@ border: 1px gray;
 font-size: 25px;
 font-style: italic;
 font-weight: 105;
-background-color: lightyellow;
+background-color: white;
 }
 input:focus {
     outline: none;
@@ -45,5 +45,7 @@ background-color: white;}
  
 .tarea:hover .xdelay{ 
 display:inline;
+color: lightpink;
+font-size: 16px;
 }
 
