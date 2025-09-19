@@ -25,7 +25,7 @@ const Home = () => {
 					></input>
 				</li>
 				{todos.map((item, index) => (
-					<li className="tarea d-flex justify-content-between border border-light-subtle px-5">
+					<li key={index} className="tarea d-flex justify-content-between border border-light-subtle px-5">
 						{item}
 						<span className="xdelay"><i className="fa-solid fa-xmark"
 							onClick={() =>
